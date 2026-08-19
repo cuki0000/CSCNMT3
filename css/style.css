@@ -115,33 +115,22 @@ button {
 
 /* Logo tạm thời */
 
-.logo-placeholder {
+
+.logo {
     width: 82px;
     height: 82px;
-
     flex: 0 0 82px;
-
-    border-radius: 50%;
-
-    background:
-        radial-gradient(circle at center,
-        #f5d332 0 30%,
-        #d71920 31% 53%,
-        #168b45 54% 75%,
-        #f5d332 76%);
-
-    border: 3px solid #eeeeee;
 
     display: flex;
     align-items: center;
     justify-content: center;
-
-    color: #d71920;
-    font-size: 30px;
-
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 .brand-text h1 {
     color: #07316d;
     font-size: 25px;
@@ -298,34 +287,19 @@ button {
 
 /* Banner tạm */
 
-.hero-image-placeholder {
+    
+.hero-overlay {
+    position: absolute;
+.hero-image {
     position: absolute;
 
     inset: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
 
-    color: rgba(255, 255, 255, 0.45);
-
-    font-size: 34px;
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(4, 38, 82, 0.95),
-            rgba(20, 75, 130, 0.75),
-            rgba(24, 79, 129, 0.55)
-        );
+    object-fit: cover;
 }
-
-.hero-overlay {
-    position: absolute;
-
     inset: 0;
 
     background:
@@ -545,6 +519,12 @@ button {
 }
 
 
+.featured-image {
+    width: 100%;
+    height: 285px;
+
+    object-fit: cover;
+}
 /* Tin lớn */
 
 .featured-main {
